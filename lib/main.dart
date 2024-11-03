@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 };
                 razorpay.open(options);
               },
-              child: Text("Pay 10 Rs",style: TextStyle(color: Colors.white,fontSize: 22),),style: OutlinedButton.styleFrom(
+              child: Text("Pay 100 Rs",style: TextStyle(color: Colors.white,fontSize: 22),),style: OutlinedButton.styleFrom(
             backgroundColor: Colors.green,minimumSize: Size(380, 50)
           ),
           ),
@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _handlePaymentSuccess(PaymentSuccessResponse response) {
     // Do something when payment succeeds
-    Fluttertoast.showToast(msg: "Payment Success");
+    Fluttertoast.showToast(msg: "Payment Successfully");
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
